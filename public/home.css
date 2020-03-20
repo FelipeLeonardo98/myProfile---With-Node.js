@@ -1,0 +1,137 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    /* background-image: url("../img/plexus5.jpg"); */
+    background-image: url("https://images.wallpaperscraft.com/image/plexus_background_dark_neon_76076_1920x1080.jpg");
+    background-size: 100%;
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+}
+
+@media (max-width: 600px)
+{
+    body{
+      /*  background-image: url("../img/plexus2.gif"); */
+      background-image: url("https://media.giphy.com/media/AEzxJYSBlDbfW/giphy.gif");
+    }
+}
+header
+{
+    width: 100%;
+    height: 100%;
+    
+}
+/* deixando o cabeçalho ocupando 100% do espaço  */
+
+ul
+{
+    position: relative;
+    margin: 0px;
+    padding: 5px;
+   /* background-color: lightgrey; */
+   background-color: black;
+    color: white;
+    font-family: Cambria;
+    text-align: center;
+}
+/*Lista principal */
+
+ul li 
+{
+    display: inline-block;
+    /*deixando as <li> em linha */
+    padding: 10px;
+    color: white;
+}
+/*Lista de títulos */
+
+ul li a 
+{
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+    display: block;
+}
+/*Estilizando os links */
+
+ul li:hover
+{
+    background-color: rgb(0, 174, 255);
+}
+/*hover nos títulos */
+
+ul ul 
+{
+    position: absolute;
+    /*para não sobrepor o outro objeto */
+    min-width: 150px;
+    /*largura da sub_lista */
+    display: none;
+    /*escondendo a sub_lista */
+}
+/*Configurando sub_lista */
+
+ul ul li
+{
+    display: block;
+    background-color:rgba(0, 183, 255, 0.719); 
+}
+/*Estilizando lista da sub_lista */
+
+ul li:hover ul
+{
+    display: block;
+    /*Deixando a sub_lista vísivel */
+}
+/*Momento de dar "show" ao passar no título */
+
+.perfil
+{
+    border-radius: 100%;
+    box-shadow: 3px 2px 6px 3px;
+    margin-top: 5%;
+    width: 30%;
+    height: 30%;
+    margin-left: auto;
+	margin-right: auto; 
+    display: block;
+}
+
+.apresentation
+{
+    text-align: center;
+}
+.myName
+{
+    font-size: 30px;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.profession
+{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    text-shadow:#000 1px -1px 2px, #000 -1px 1px 2px, #000 1px 1px 2px, #000 -1px -1px 2px;
+}
+
+.aboutMe
+{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    color: white;
+    
+}
+
+footer
+{
+    padding: 30px;
+    text-align: center;
+    word-spacing: 60px;
+    text-decoration: none;
+}
